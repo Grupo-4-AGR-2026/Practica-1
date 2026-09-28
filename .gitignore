@@ -1,0 +1,43 @@
+# ==============================================================================
+# IDEs & Editors
+# ==============================================================================
+
+# JetBrains / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+build/
+
+# Visual Studio / JetBrains Rider
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Sublime Text / Atom / Text Editors
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
