@@ -1,0 +1,101 @@
+%! Author = jdesa, morteega, dagalle
+%! Date = 28/09/2026
+
+\documentclass[11pt,a4paper]{article}
+
+% --- Paquetes de idioma y tipografía ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{microtype}
+\usepackage{lmodern}
+
+% --- Geometría y márgenes ---
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+
+% --- Paquetes matemáticos y símbolos ---
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% --- Tablas y figuras ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% --- Formato de código y comandos Junos ---
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codebg}{rgb}{0.96,0.96,0.96}
+\definecolor{keywordblue}{rgb}{0.13,0.13,0.7}
+
+\lstdefinestyle{junosstyle}{
+    backgroundcolor=\color{codebg},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=8pt,
+    numberstyle=\tiny\color{codegray},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    framerule=0.5pt,
+    rulecolor=\color{codegray}
+}
+\lstset{style=junosstyle}
+
+% --- Enlaces y referencias cruzadas ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfauthor={jdesa, morteega, dagalle},
+    pdftitle={Memoria Técnica - Diseño de Centro de Datos Bare-Metal}
+}
+
+% --- Datos del documento ---
+\title{\textbf{Memoria Técnica: Diseño y Dimensionamiento de una Infraestructura de Red de Centro de Datos Bare-Metal con Equipamiento Juniper}}
+\author{jdesa \and morteega \and dagalle}
+\date{Curso 2026--2027}
+
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+% TODO: Resumen ejecutivo del proyecto y principales resultados obtenidos.
+    \end{abstract}
+
+    \newpage
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \listoftables
+    \newpage
+
+% --- Secciones Modulares ---
+    \input{sections/01_introduccion}
+    \input{sections/02_analisis_trafico}
+    \input{sections/03_arquitectura_red}
+    \input{sections/04_fiabilidad_disponibilidad}
+    \input{sections/05_plan_direccionamiento}
+    \input{sections/06_enrutamiento_seguridad}
+    \input{sections/07_configuracion_junos}
+    \input{sections/08_presupuesto_bom}
+    \input{sections/09_plan_pruebas}
+    \input{sections/10_conclusiones}
+
+\end{document}
