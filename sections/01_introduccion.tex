@@ -3,7 +3,6 @@
 
 \subsection{Objetivos del Proyecto}
 \label{subsec:objetivos}
-% TODO: Describir los objetivos principales del diseño del centro de datos bare-metal.
 
 El objetivo de este proyecto es diseñar la arquitectura de red de un centro de
 datos que dispone únicamente de infraestructura \textit{bare metal}, a partir
@@ -12,6 +11,24 @@ La red debe dar servicio a \textbf{6.822 servidores} distribuidos en
 \textbf{360 racks} de cómputo, al menor coste posible y cumpliendo un objetivo
 de fiabilidad del \textbf{99,958\,\%}.
 
+Este objetivo general se concreta en los siguientes objetivos específicos:
+
+\begin{tight-list}
+    \setlength{\itemsep}{0pt}
+    \setlength{\topsep}{2pt}
+    \setlength{\parsep}{0pt}
+    \item \textbf{Caracterizar el tráfico.}
+    \item \textbf{Dimensionar las capas de acceso y agregación.}
+    \item \textbf{Aplicar la redundancia necesaria.}
+    \item \textbf{Dimensionar el \textit{core} y ajustar la sobresuscripción.}
+    \item \textbf{Proteger la red mediante cortafuegos.}
+    \item \textbf{Definir el direccionamiento y el enrutamiento.}
+    \item \textbf{Evaluar el coste.}
+    \item \textbf{Validar el diseño en laboratorio.}
+\end{tight-list}
+
+Todas las decisiones de diseño se justifican a lo largo de la memoria,
+explicando su motivación y las alternativas consideradas.
 
 \subsection{Caso de Uso y Servicios Soportados}
 \label{subsec:caso_uso}
