@@ -1,9 +1,6 @@
 \section{Introducción y Alcance del Proyecto}
 \label{sec:introduccion}
 
-\subsection{Objetivos del Proyecto}
-\label{subsec:objetivos}
-
 El objetivo de este proyecto es diseñar la arquitectura de red de un centro de
 datos que dispone únicamente de infraestructura \textit{bare metal}, a partir
 de los requisitos de tráfico y de servidores proporcionados en el enunciado.
@@ -30,10 +27,9 @@ Este objetivo general se concreta en los siguientes objetivos específicos:
 Todas las decisiones de diseño se justifican a lo largo de la memoria,
 explicando su motivación y las alternativas consideradas.
 
-\subsection{Caso de Uso y Servicios Soportados}
-\label{subsec:caso_uso}
-% TODO: Detallar el perfil de servicios empresariales/cómputo y requisitos de conectividad.
-
-\subsection{Alcance y Limitaciones}
-\label{subsec:alcance}
-% TODO: Especificar el alcance de la memoria técnica y las limitaciones consideradas.
+\paragraph{Limitaciones contempladas:}
+Los servidores físicos, los conmutadores ToR y el cableado interno intra-rack
+se consideran preexistentes e integrados en el bastidor de cómputo. Asimismo,
+quedan fuera del alcance la ingeniería de instalaciones (suministro eléctrico,
+refrigeración y espacio físico) y la gestión del software de aplicación
+o licencias superiores.
