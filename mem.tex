@@ -84,12 +84,41 @@
 \author{\autoruno \and \autordos \and \autortres \and \autorcuatro}
 \date{Curso 2026--2027}
 
-\begin{document}
+\begin{document}    % TODO: update both abstracts when finished
 
     \maketitle
 
     \begin{abstract}
-% TODO: Resumen ejecutivo del proyecto y principales resultados obtenidos.
+        Esta memoria técnica presenta el diseño integral de la infraestructura de red
+        para un centro de datos \textit{bare-metal} compuesto por \textbf{6.822 servidores}
+        en \textbf{360 racks}. A partir de una matriz de tráfico agregado de \textbf{17,34~Tbps}
+        marcadamente vertical (84\,\% norte-sur), se propone una arquitectura Fat-Tree
+        modular no bloqueante adaptada al perfil de distribución de contenidos.
+
+        El diseño integra redundancia activa en las capas de acceso y agregación, cortafuegos
+        perimetrales y un esquema de direccionamiento IPv4 jerárquico optimizado para
+        sumarización. La solución garantiza una fiabilidad del \textbf{99,958\,\%}
+        (indisponibilidad inferior a 3,7~h/año) y valida su viabilidad económica con un
+        coste de cableado en la lista de materiales (\textit{BoM}) de \textbf{92.340~€}
+        (13,54~€/servidor). La conectividad y políticas de seguridad se validan mediante un
+        banco de pruebas en laboratorio sobre equipamiento Juniper Networks.
+    \end{abstract}
+
+    \renewcommand{\abstractname}{Abstract}
+    \begin{abstract}
+        This technical report presents the comprehensive network infrastructure design
+        for a \textit{bare-metal} data center hosting \textbf{6,822 servers} distributed
+        across \textbf{360 racks}. Based on an aggregate traffic matrix of \textbf{17.34~Tbps}
+        with a predominantly vertical flow pattern (84\,\% north-south), a modular non-blocking
+        Fat-Tree architecture tailored for content delivery workloads is proposed.
+
+        The architecture incorporates active redundancy across the access and aggregation layers,
+        perimeter firewalls, and a hierarchical IPv4 addressing scheme optimized for route
+        summarization. The proposed solution delivers a system availability of \textbf{99.958\,\%}
+        (annual downtime under 3.7~hours) and confirms economic feasibility with a bill of materials
+        (\textit{BoM}) cabling expenditure of \textbf{€92,340} (€13.54 per server). End-to-end
+        connectivity and security policies are empirically validated through a laboratory testbed
+        deployed on Juniper Networks hardware.
     \end{abstract}
 
     \newpage
