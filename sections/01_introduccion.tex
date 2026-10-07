@@ -5,8 +5,11 @@ El objetivo de este proyecto es diseñar la arquitectura de red de un centro de
 datos que dispone únicamente de infraestructura \textit{bare metal}, a partir
 de los requisitos de tráfico y de servidores proporcionados en el enunciado.
 La red debe dar servicio a \textbf{6.822 servidores} distribuidos en
-\textbf{360 racks} de cómputo, al menor coste posible y cumpliendo un objetivo
-de fiabilidad del \textbf{99,958\,\%}.
+\textbf{360 racks} de cómputo, maximizando la utilidad del sistema al menor coste
+posible y cumpliendo un objetivo de fiabilidad del \textbf{99,958\,\%}.
+
+\subsection{Objetivos del Proyecto}
+\label{subsec:objetivos}
 
 Este objetivo general se concreta en los siguientes objetivos específicos:
 
@@ -25,11 +28,17 @@ Este objetivo general se concreta en los siguientes objetivos específicos:
 \end{tight-list}
 
 Todas las decisiones de diseño se justifican a lo largo de la memoria,
-explicando su motivación y las alternativas consideradas.
+explicando su motivación y las alternativas consideradas para maximizar el rendimiento.
 
-\paragraph{Limitaciones contempladas:}
-Los servidores físicos, los conmutadores ToR y el cableado interno intra-rack
-se consideran preexistentes e integrados en el bastidor de cómputo. Asimismo,
-quedan fuera del alcance la ingeniería de instalaciones (suministro eléctrico,
-refrigeración y espacio físico) y la gestión del software de aplicación
-o licencias superiores.
+\subsection{Limitaciones y Alcance}
+\label{subsec:limitaciones}
+
+Para focalizar los recursos en los componentes de mayor impacto y eficiencia en la red, se establecen las siguientes delimitaciones:
+
+\begin{tight-list}
+    \setlength{\itemsep}{0pt}
+    \setlength{\topsep}{2pt}
+    \setlength{\parsep}{0pt}
+    \item Los servidores físicos, los conmutadores ToR y el cableado interno intra-rack se consideran preexistentes e integrados en el bastidor de cómputo.
+    \item Quedan fuera del alcance la ingeniería de instalaciones (suministro eléctrico, refrigeración y espacio físico) y la gestión del software de aplicación o licencias superiores.
+\end{tight-list}
