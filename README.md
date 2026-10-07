@@ -9,6 +9,11 @@ Diseño de un centro de datos bare metal — Arquitectura, dimensionamiento, dir
 El documento principal del proyecto está modularizado en LaTeX (`mem.tex`) e incluye
 las secciones ubicadas en el directorio `sections/`.
 
+> [!WARNING]
+> Asegúrese de cerrar `mem.pdf` (o el visor de PDF en uso) antes de compilar el documento.
+En sistemas Windows, los visores de PDF bloquean el archivo, impidiendo que el compilador sobrescriba el resultado
+y provocando errores de compilación (`Permission denied` o `I can't write on file`).
+
 ### Requisitos previos
 
 Es necesario disponer de una distribución de LaTeX instalada en el sistema:
